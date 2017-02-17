@@ -1,0 +1,6 @@
+---
+# tasks file for ansible-role-nginx-proxy
+
+- template: file={{nginx_proxy_confd_file}}
+
+- service: name=nginx state=reloaded
